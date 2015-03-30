@@ -1,0 +1,2 @@
+/home/owool/Geant4-Codes/NanoparticleEOutput/Source/CMakeFiles/NanoparticleEOutput.dir
+/home/owool/Geant4-Codes/NanoparticleEOutput/Source/CMakeFiles/NanoparticleEOutputProj.dir

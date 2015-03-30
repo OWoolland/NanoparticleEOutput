@@ -1,0 +1,55 @@
+/run/initialize
+
+##################################################
+# Set verbosity  
+##################################################
+
+/process/verbose 0
+/process/setVerbose 0
+/process/em/verbose 0
+/process/eLoss/verbose 0
+/tracking/verbose 0
+
+##################################################
+# Set deexcitation parameters
+##################################################
+
+/process/em/deexcitation World true true true
+/process/em/fluo true
+/process/em/auger true
+/process/em/pixe true
+
+/run/physicsModified 
+
+##################################################
+# Set particle gun parameters
+##################################################
+
+/gps/verbose 0
+
+# Gun particle
+/gps/particle gamma
+
+# Gun shape
+/gps/pos/type Plane
+/gps/pos/shape Circle
+/gps/pos/radius 100 nm
+
+# Gun position / direction
+/gps/pos/centre -110.0 0. 0. nm 
+/gps/ang/type cos
+/gps/ang/mintheta 90. deg
+/gps/ang/maxtheta 90. deg
+/gps/ang/minphi 180. deg
+/gps/ang/maxphi 180. deg
+
+# Gun energy
+/gps/ene/type Gauss
+/gps/ene/mono 1486.7 eV
+/gps/ene/sigma 0.5 eV
+
+##################################################
+# Start run
+##################################################
+
+/run/beamOn 1000000
